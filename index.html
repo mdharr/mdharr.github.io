@@ -8,6 +8,27 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   <style>
+    
+    #btnScrollToTop {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #FF7F50;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      
+    }
+    
+    #btnScrollToTop:active {
+      background: #660000;
+    }
+    
     .profile {
       font-family: monospace;
       text-align: center;
@@ -50,6 +71,24 @@
 
 </head>
 <body>
+  <div>
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+    <div>
+    </div>
+    
+    <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+      
+      btnScrollToTop.addEventListener("click", function () {
+        window.scrollTo(0, 0);
+      });
+    </script
+  </div>
+  
+  
   <div class="profile">
     <img src="https://avatars.githubusercontent.com/u/97649737?v=4" alt="Profile Image" class="profile__image">
     <a href="https://github.com/mdharr" style="color: #FF7F50"><div class="profile__name">Michael Harrington</div></a>
@@ -70,7 +109,7 @@
   
   <div>
     <h4>United States Navy</h4>
-    <h5><a href="https://www.navy.com/careers/cryptologic-technician-interpretive" style="color: #FF7F50">Cryptologic Technician Interpretive</a>, Petty Officer 2nd Class (E-5)</h5>
+    <h5><a href="https://www.navy.com/careers/cryptologic-technician-interpretive" style="color: #FF7F50">Cryptologic Technician Interpretive</a> (CTI), Petty Officer 2nd Class (E-5)</h5>
     <h6>Nov 2007 - 2013</h6>
     
     <ul>
