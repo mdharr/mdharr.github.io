@@ -9,29 +9,66 @@
   
   <style>
     
+    .button {
+      display: inline-flex;
+      height: 50px;
+      padding: 0;
+      background: #009578;
+      border: none;
+      outline:none;
+      border-radius: 5px;
+      overflow: hidden;
+      font-family: monospace, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #008168;
+    }
+    
+    .button:active {
+      background: #006e58;
+    }
+    
+    .button__text,
+    .button__icon {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 24px;
+      color: #fff;
+      height: 100%;
+    }
+    
+    .button__icon {
+      font-size: 1.5em;
+      background: rgba(0, 0, 0, 0.08);
+    }
+    
     a:link {
-  color: #FF7F50;
-  background-color: transparent;
-  text-decoration: none;
-}
+    color: #FF7F50;
+    background-color: transparent;
+    text-decoration: none;
+    }
 
-a:visited {
-  color: #FF7F50;
-  background-color: transparent;
-  text-decoration: none;
-}
+    a:visited {
+    color: #FF7F50;
+    background-color: transparent;
+    text-decoration: none;
+    }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
+    a:hover {
+    color: #ff6c37;
+    background-color: transparent;
+    text-decoration: underline;
+    }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
+    a:active {
+    color: #ff5a1d;
+    background-color: transparent;
+    text-decoration: underline;
+    }
     
     #btnScrollToTop {
       position: fixed;
@@ -49,8 +86,12 @@ a:active {
       
     }
     
+    #btnScrollToTop:hover {
+      background: #ff6c37;
+    }
+    
     #btnScrollToTop:active {
-      background: #444444;
+      background: #ff5a1d;
       
     }
     
@@ -122,7 +163,7 @@ a:active {
     <a href="https://github.com/mdharr" target="_blank" rel="noopener noreferrer" /*style="color: #FF7F50"*/><div class="profile__name">Michael Harrington</div></a>
     <div class="profile__title">Aspiring Web Developer</div>
     <div class="profile__detail">
-      <a href="https://github.com/mdharr" target="_blank" rel="noopener noreferrer" /*style="color: #FF7F50"*/ <i class="material-icons">link</i></a> github.com/mdharr
+      <a href="https://github.com/mdharr" target="_blank" rel="noopener noreferrer" <i class="material-icons"><ion-icon name="logo-github">link</ion-icon></a> github.com/mdharr
     </div>
 
   </div>
@@ -227,6 +268,9 @@ a:active {
       <li>Over 3-years’ experience teaching English abroad</li>
     </ul>
   </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
 </body>
 </html>
