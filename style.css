@@ -2,7 +2,7 @@ body {
   background-color: #444444;
   color: #dddddd;
   font-family: Monospace, Monaco, Helvetica, Sans-serif;
-  margin: 5% 5%;
+  margin: 0.5% 0.5%;
 }
 
 .exp-header {
@@ -53,6 +53,14 @@ body {
   background-color: rgba(0,0,0, 0.1)
 }
 
+.cont-header {
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background-color: rgba(0,0,0, 0.1)
+}
+
 ul {
   line-height: 150%;
 }
@@ -62,7 +70,6 @@ a {
 }
 
 html {  
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth; 
 }
-
 
