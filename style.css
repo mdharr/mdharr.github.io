@@ -21,15 +21,7 @@ body {
   background-color: rgba(0,0,0, 0.1)
 }
 
-.cert-header {
-  text-align: center;
-  text-transform: uppercase;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  background-color: rgba(0,0,0, 0.1)
-}
-
-.skl-header {
+.achi-header {
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid #dddddd;
@@ -45,7 +37,7 @@ body {
   background-color: rgba(0,0,0, 0.1)
 }
 
-.sum-header {
+.high-header {
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid #dddddd;
