@@ -4,44 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Michael Harrington Resume</title>
+  <link rel="stylesheet" href="background_styles.css">
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   <style>
-    
-    /* The navigation bar */
-    .navbar {
-      overflow: hidden;
-      text-align: center;
-      background-color: #333;
-      position: sticky; /* Set the navbar to fixed position */
-      top: 0; /* Position the navbar at the top of the page */
-      left: 0;
-      width: 100%; /* Full width */
-    }
-
-      /* Links inside the navbar */
-    .navbar a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 0px 30px;
-      text-decoration: none;
-    }
-
-          /* Change background on mouse-over */
-    .navbar a:hover {
-      background: #ddd;
-      color: black;
-    }
-
-      /* Main content */
-    .main {
-      margin-top: px; /* Add a top margin to avoid content overlay */
-    }
-    
-    .button {
+      .button {
       display: inline-flex;
       height: 50px;
       padding: 0;
@@ -130,7 +99,7 @@
     .profile {
       font-family: monospace;
       text-align: center;
-      max-width: 200px;
+      max-width: 250px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       padding: 30px;
       display:auto;
@@ -172,16 +141,28 @@
 
 </head>
 <body>
-  
-  <div class="navbar">
-    <a href="#anchor1">Experience</a>
-    <a href="#anchor2">Education</a>
-    <a href="#anchor3">Achievements</a>
-    <a href="#anchor4">Qualities</a>
-    <a href="#anchor5">Highlights</a>
-    <a href="#anchor6">Contact</a>
-  </div>
-  
+    
+  <nav class="navbar">
+    <div class="page-title">Welcome</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#anchor1">Experience</a></li>
+        <li><a href="#anchor2">Education</a></li>
+        <li><a href="#anchor3">Achievements</a></li>
+        <li><a href="#anchor4">Qualities</a></li>
+        <li><a href="#anchor5">Highlights</a></li>
+        <li><a href="#anchor6">Contact</a></li>
+    </div>
+  </nav>
+    
   <div>
     <button id="btnScrollToTop">
       <i class="material-icons">arrow_upward</i>
@@ -198,7 +179,7 @@
     });
   </script>
   </div>
-  
+
   <div>
     <h1></h1>
   </div>
@@ -206,7 +187,7 @@
   <div class="profile">
     <img src="https://avatars.githubusercontent.com/u/97649737?v=4" alt="Profile Image" class="profile__image">
     <a href="https://github.com/mdharr" target="_blank" rel="noopener noreferrer" /*style="color: #FF7F50"*/><div class="profile__name">Michael Harrington</div></a>
-    <div class="profile__title">Aspiring Web Developer</div>
+    <div class="profile__title">Translator</div>
     <div class="profile__detail">
       <a href="https://github.com/mdharr" target="_blank" rel="noopener noreferrer" style="color: #ffffff"<i class="material-icons"><ion-icon name="logo-github">link</ion-icon></a> github.com/mdharr
     </div>
@@ -308,7 +289,7 @@
   </div>
   
   <div>
-    <a href="mailto:mdharr7@gmail.com" style="line-height:3.5em";><span class="material-icons md-24">email</span>Email</a>
+    <a href="mailto:mdharr7@gmail.com" style="line-height:3.5em";><span class="material-icons">email</span>Email</a>
   </div>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
