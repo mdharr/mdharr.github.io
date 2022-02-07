@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(120deg, #333333, #666666);
+  background-image: linear-gradient(to right, #333333, #555555);
   /* background-color: #444444; */
   color: #dddddd;
   font-family: monospace, sans-serif;
